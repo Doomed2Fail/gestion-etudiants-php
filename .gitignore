@@ -1,4 +1,4 @@
-/uploads/*
-!/uploads/.gitkeep
-/data/etudiants.txt
-!/data/.gitkeep
+/src/uploads/*
+!/src/uploads/.gitkeep
+/src/data/etudiants.txt
+!/src/data/.gitkeep
