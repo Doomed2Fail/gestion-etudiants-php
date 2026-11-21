@@ -1,0 +1,35 @@
+:root { font-family: "Segoe UI", Arial, sans-serif; color: #17233d; background: #f7f3fc; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #f7f3fc; }
+header { padding: 25px max(6%, calc((100vw - 1120px)/2)); background: linear-gradient(115deg, #301650, #7540bd); color: white; box-shadow: 0 8px 30px #122c5730; }
+header h1 { margin: 0 0 17px; font-size: 25px; letter-spacing: -.5px; }
+nav { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+nav a { color: #e7efff; text-decoration: none; padding: 8px 12px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+nav a:hover { background: #ffffff22; color: white; }
+main { max-width: 1120px; margin: 38px auto; padding: 0 24px; min-height: 60vh; }
+h2 { font-size: 26px; letter-spacing: -.6px; margin: 0 0 24px; }
+a { color: #7540bd; } a:hover { color: #4d2686; }
+.carte { max-width: 570px; margin: 0 auto; padding: 32px; background: #fff; border: 1px solid #eae1f4; border-radius: 18px; box-shadow: 0 14px 40px #243c6710; }
+label { display: block; margin: 18px 0; font-size: 14px; font-weight: 600; color: #41516b; }
+input, select, textarea { font: inherit; color: #1f2d46; background: #fff; border: 1px solid #d9caea; border-radius: 9px; padding: 11px 12px; outline: none; }
+input:focus, select:focus, textarea:focus { border-color: #9a64df; box-shadow: 0 0 0 3px #9a64df21; }
+.carte input, .carte select, .carte textarea { display: block; width: 100%; margin-top: 7px; }
+button { background: #7943c6; color: white; font: inherit; font-size: 14px; font-weight: 700; border: 0; padding: 12px 19px; border-radius: 9px; cursor: pointer; }
+button:hover { background: #5f309f; } .carte button { margin-right: 12px; }
+.recherche { display: flex; align-items: end; flex-wrap: wrap; gap: 14px; padding: 20px; border-radius: 14px; background: white; border: 1px solid #eae1f4; }
+.recherche label { margin: 0; } .recherche input, .recherche select { display: block; margin-top: 7px; }
+main > p:not(.succes) { background: white; border: 1px solid #eae1f4; border-radius: 12px; padding: 15px 18px; color: #465877; line-height: 1.7; }
+.table-wrap { overflow-x: auto; border: 1px solid #eae1f4; border-radius: 14px; box-shadow: 0 10px 28px #253f6810; }
+table { width: 100%; border-collapse: collapse; background: white; font-size: 14px; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #edf0f6; white-space: nowrap; }
+th { background: #faf7ff; color: #667792; text-transform: uppercase; font-size: 11px; letter-spacing: .7px; }
+tbody tr:last-child td { border-bottom: 0; } tbody tr:hover { background: #faf7ff; }
+td a { font-weight: 600; text-decoration: none; margin-right: 10px; } .supprimer { color: #c94756; }
+.photo { width: 46px; height: 46px; object-fit: cover; border-radius: 50%; }
+.vert { color: #168354; font-weight: bold; } .rouge { color: #d14b5a; font-weight: bold; }
+.succes, .erreur { padding: 13px 16px; border-radius: 9px; } .succes { background: #e5f6ed; color: #177647; } .erreur { background: #fff0f0; color: #b63040; }
+footer { text-align: center; padding: 25px; color: #8896ab; font-size: 13px; }
+.sombre { background: #111a2a; color: #eef3ff; } .sombre .carte, .sombre table, .sombre .recherche, .sombre main > p:not(.succes) { background: #1d2a3d; border-color: #34445c; color: #e2eaff; }
+.sombre label { color: #c4d0e3; } .sombre th { background: #273952; color: #c0cde0; } .sombre td { border-color: #34445c; } .sombre tbody tr:hover { background: #273952; } .sombre .table-wrap { border-color: #34445c; } .sombre a { color: #d0adff; } .sombre .supprimer { color: #ff9aa5; }
+@media (max-width: 600px) { header { padding: 22px; } main { margin: 25px auto; padding: 0 16px; } .carte { padding: 23px; } .recherche { align-items: stretch; flex-direction: column; } .recherche input, .recherche select { width: 100%; } }
+
